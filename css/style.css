@@ -1,28 +1,82 @@
-.main {
-    background-image: url('/images/portada.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center; 
-  }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline; 
-  }
-  
-  nav ul li a {
-    text-decoration: none; 
-    text-transform: uppercase;
-    color: black; 
-  }
-.titulo{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+/* seccion inicio*/ 
+.inicio{
+display: flex;
+align-items: center;
+justify-content:center;
+background-color: rgb(180, 208, 168);
+gap: 20px;
 }
+.texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img{
+  width: 30%;
+}
+.img img{
+  width: 80%;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+
+/* Pagina Nosotros*/
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 30px;
+}
+
+.galeria img {
+    max-width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.historia, .galeria, .qualidades {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 30px;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 30px;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+}
+
+/* Footer*/
+
 footer {
     background-color: #f0f0f0;
     padding: 15px;
@@ -53,19 +107,5 @@ footer {
     text-decoration: none;
     color: #333;
   }
-  .columna {
-    width: 30%; 
-    display: inline-block;
-    vertical-align: top; 
-    margin-right: 5px; 
-    box-sizing: border-box; 
-}
 
-.columna:last-child {
-    margin-right: 0; 
-}
-
-.columna img {
-    width: 100%; 
-}
 
