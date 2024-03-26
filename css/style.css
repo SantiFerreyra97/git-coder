@@ -22,10 +22,9 @@ gap: 20px;
   border-radius: 50%;
 }
 
-
 /* Pagina Nosotros*/
 
-.galeria {
+.galeria{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
@@ -33,7 +32,13 @@ gap: 20px;
 }
 
 .galeria img {
-    max-width: 80%;
+  max-width: 85%;
+  height: 80%;
+  border-radius: 5px;    
+
+}
+.galeria img:hover{
+  max-width: 80%;
     height: 100%;
     border-radius: 5px;
 }
@@ -42,6 +47,9 @@ gap: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+}
+.qualidades ul{
+  list-style: none;
 }
 
 @media only screen and (max-width: 767px) {
