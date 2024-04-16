@@ -1,0 +1,12 @@
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin medidas($margin, $pading, $height){
+    margin:$margin ;
+    padding:$pading;
+    height:$height;
+
+}
