@@ -3,6 +3,9 @@
 
 
 body {
+  header{
+  margin-bottom: 75px
+}
     @include medidas(0,0,100vh);
     .inicio{
         display: flex;
@@ -22,6 +25,9 @@ body {
       margin: 15px;
       border-radius: 50%;
     }
+    .nosotros{
+      background-color: $color-principal;
+    }
     .galeria{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -38,13 +44,29 @@ body {
         height: 100%;
         border-radius: 5px;
     }
-    .historia, .galeria, .qualidades {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
+    .qualidades{
+      padding-bottom:150px;
     }
+       
     .qualidades ul{
     list-style: none;
+    }
+    .cards{
+      .card{
+        background-color: $color-principal;
+      }
+    }
+    .servicios{
+      padding-bottom: 250px;
+      img{
+        height: 280px;
+      }
+    }
+    .contacto{
+      
+        padding-bottom: 150px;
+    
+      
     }
     
 }

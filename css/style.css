@@ -3,6 +3,9 @@ body {
   padding: 0;
   height: 100vh;
 }
+body header {
+  margin-bottom: 75px;
+}
 body .inicio {
   display: flex;
   align-items: center;
@@ -23,6 +26,9 @@ body .img img {
   margin: 15px;
   border-radius: 50%;
 }
+body .nosotros {
+  background-color: rgb(180, 208, 168);
+}
 body .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,13 +45,23 @@ body .galeria img:hover {
   height: 100%;
   border-radius: 5px;
 }
-body .historia, body .galeria, body .qualidades {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
+body .qualidades {
+  padding-bottom: 150px;
 }
 body .qualidades ul {
   list-style: none;
+}
+body .cards .card {
+  background-color: rgb(180, 208, 168);
+}
+body .servicios {
+  padding-bottom: 250px;
+}
+body .servicios img {
+  height: 280px;
+}
+body .contacto {
+  padding-bottom: 150px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
